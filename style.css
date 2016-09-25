@@ -1,12 +1,15 @@
-.container {
-  height: 100vh;
-  width: 100vw;
+body {
+  margin: 0;
 }
 
 textarea {
-  width: 100%;
-  height: 30vh;
+  height: 29vh;
   border: 1px solid black;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 iframe {
@@ -17,9 +20,55 @@ iframe {
   height: 100vh;
 }
 
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav {
+  height: 30px;
+  width: 100%;
+  background-color: #23181C;
+}
+
+.btn {
+  border: none;
+  background-color: #fff;
+  height: 100%;
+  width: 100px;
+  border-bottom: 2px solid #d800ff;
+  float: right;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-html {
+  background-color: #DF423F;
+}
+
+.title-css {
+  background-color: #0089ff;
+}
+
+.title-js {
+  background-color: #efe818;
+}
+
+.title h1 {
+  margin: 0px;
+  font-size: 12px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.row-full {
+  display: flex;
+  flex-direction: column;
 }
 
 .col-50 {
