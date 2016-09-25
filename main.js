@@ -4,6 +4,7 @@ $(document).ready(function () {
   var $contents = $iframe.contents();
   var $body = $contents.find('body');
   var $style = $contents.find('head').append('<style></style>').children('style');
+  var $js = $contents.find('head').append('<script></script>').children('script');
 
   $('textarea').focus(function () {
     var $this = $(this);
@@ -13,6 +14,8 @@ $(document).ready(function () {
         $body.html($this.val());
       } else if ($this.attr('id') === 'css') {
         $style.text($this.val());
+      } else if ($this.attr('id') === 'js') {
+        $js.text($this.val());
       }
     });
   });
